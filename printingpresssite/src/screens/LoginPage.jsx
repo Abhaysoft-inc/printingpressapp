@@ -21,8 +21,8 @@ export default class LoginPage extends Component {
                         <p className="mt-9 font-Poppins text-center text-3xl font-bold">Login</p>
                         <form action="/api/" method="post">
                             <div className="mt-16 mx-16">
-                                <p className='text-lg mb-1 mx-1 font-Poppins'>Username or Email</p>
-                                <input type="text" className='text-lg rounded-md text-black p-1 font-semibold  active:border-white' name="username" id="" />
+                                <p className='text-lg mb-1 mx-1 font-Poppins'>Email</p>
+                                <input type="text" className='text-lg rounded-md text-black p-1 font-semibold  active:border-white' name="email" id="" />
                                 <p className='text-lg mb-1 mt-3 mx-1 font-Poppins'>Password</p>
                                 <input type="password" className='text-lg rounded-md text-black p-1 font-semibold mb-1.5' name="password" id="" />
 
