@@ -11,6 +11,15 @@ export default function Navbar() {
 
     return (
         <>
+            <div className="navbar lg:flex lg:justify-between bg-blue-950 py-1">
+                <ul className="brand">
+                    <li className="text-center text-white text-xl font-[600] font-Poppins">Welcome to Karvi Printing!</li>
+
+                </ul>
+
+                <ul className="hidden">
+                </ul>
+            </div>
             {/* Lower navbar */}
             <div className="lowernav flex justify-between p-1 py-3 px-8 bg-gray-100">
                 <div className="flex">
