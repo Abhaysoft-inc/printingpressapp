@@ -13,7 +13,7 @@ export default class NewNav extends Component {
 
                 {/* top menu */}
 
-                <div className="tpmnu hidden lg:flex justify-between text-sm font-[400] font-Poppins bg-slate-100">
+                <div className="tpmnu hidden lg:flex md:flex justify-between text-sm font-[400] font-Poppins bg-slate-100">
                     <ul className="ml-10">
                         <p className="brand p-[.5rem] flex "> <PiShippingContainerFill size={21} className='mr-2' /> Track Order</p>
 
@@ -31,7 +31,7 @@ export default class NewNav extends Component {
                 {/* pc lower menu */}
 
 
-                <div className="hidden lowermnu sticky top-0  lg:flex px-2 py-4 justify-between bg-white shadow-lg">
+                <div className="hidden lowermnu sticky top-0  lg:flex md:flex px-2 py-4 justify-between bg-white shadow-lg">
 
                     <div className="flex">
                         <a href="/">
@@ -61,7 +61,7 @@ export default class NewNav extends Component {
 
                 {/* Mobile menu */}
 
-                <div className="mobmenu flex justify-between items-center p-2">
+                <div className="mobmenu flex justify-between items-center p-2 lg:hidden md:hidden">
                     <div className="row flex flex-wrap">
                         <IoMenuOutline size={24} className='' />
                     </div>
