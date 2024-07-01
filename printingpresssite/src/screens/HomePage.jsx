@@ -2,10 +2,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import NewNav from '../components/NewNav'
+import { Link } from 'react-router-dom'
 
 export default function HomePage() {
     return (
         <>
+
             <NewNav />
             <img src="/images/banner.png" className='w-screen' alt="" loading='lazy' />
 
