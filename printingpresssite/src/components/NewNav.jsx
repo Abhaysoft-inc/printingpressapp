@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { IoMdSearch } from 'react-icons/io'
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaCartShopping } from "react-icons/fa6";
 import { PiShippingContainerFill } from "react-icons/pi";
+import { RiUser5Fill } from "react-icons/ri";
+import { PiSealQuestionFill } from "react-icons/pi";
 
 export default class NewNav extends Component {
     render() {
@@ -46,10 +48,10 @@ export default class NewNav extends Component {
                         </form>
                     </div>
 
-                    <div className="flex p-[.5rem] space-x-4 mr-16">
-                        <p className="">Help Center</p>
-                        <p className="">Login/Signup</p>
-                        <p className="">Cart</p>
+                    <div className="flex p-[.5rem] space-x-7 mr-16">
+                        <a className="flex" href=''><PiSealQuestionFill size={24} className='mr-2' /> Help Center</a>
+                        <a href='/login' className="flex"><RiUser5Fill size={24} className='mr-2' /> Login / Signup</a>
+                        <a href='' className=""><FaCartShopping size={24} className='mt-1' /></a>
                     </div>
 
 
