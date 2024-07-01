@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar';
+import NewNav from '../../components/NewNav';
 
 export default class SignUpPage extends Component {
     render() {
@@ -7,7 +8,7 @@ export default class SignUpPage extends Component {
 
             <>
 
-                <Navbar />
+                <NewNav />
 
                 <div className="loginbar flex justify-center items-center">
 

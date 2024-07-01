@@ -30,13 +30,13 @@ export default class NewNav extends Component {
                 {/* lower menu */}
 
 
-                <div className="lowermnu sticky top-0  flex px-2 py-4 justify-between bg-white">
+                <div className="lowermnu sticky top-0  flex px-2 py-4 justify-between bg-white shadow-lg">
 
                     <div className="flex">
                         <a href="/">
                             <img src="/images/logo2.png" alt="" className="w-14 h-12 ml-6" />
                         </a>
-                        <p className="my-2 ml-3 text-lg font-[700] font-Poppins">Karvi Printing</p>
+                        <a className="my-2 ml-3 text-lg font-[700] font-Poppins" href='/'>Karvi Printing</a>
                         {/* Search box */}
                         <form action="" className="relative ml-9">
                             <IoMdSearch className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400" />
@@ -48,7 +48,7 @@ export default class NewNav extends Component {
                         </form>
                     </div>
 
-                    <div className="flex p-[.5rem] space-x-7 mr-16">
+                    <div className="flex p-[.5rem] space-x-7 mr-16 text-slate-600">
                         <a className="flex" href=''><PiSealQuestionFill size={24} className='mr-2' /> Help Center</a>
                         <a href='/login' className="flex"><RiUser5Fill size={24} className='mr-2' /> Login / Signup</a>
                         <a href='' className=""><FaCartShopping size={24} className='mt-1' /></a>

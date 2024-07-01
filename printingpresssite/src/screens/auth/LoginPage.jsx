@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../../components/Navbar'
+import NewNav from '../../components/NewNav'
 
 export default class LoginPage extends Component {
 
@@ -12,9 +13,9 @@ export default class LoginPage extends Component {
         return (
             <>
 
-                <Navbar />
+                <NewNav />
 
-                <div className="loginbar flex justify-center items-center">
+                <div className="loginbar flex justify-center items-center mb-10">
 
                     <div className="mt-16 loginbox m-auto bg-blue-950 w-96 h-[500px] rounded-md text-white ">
 

@@ -2,7 +2,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import NewNav from '../components/NewNav'
-import ReviewsSection from '../components/ReviewSection'
 
 export default function HomePage() {
     return (
@@ -33,7 +32,7 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <ReviewsSection />
+
 
 
         </>
