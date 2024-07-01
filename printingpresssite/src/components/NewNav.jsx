@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { IoMdSearch } from 'react-icons/io'
+import { FaLocationDot } from "react-icons/fa6";
+import { PiShippingContainerFill } from "react-icons/pi";
 
 export default class NewNav extends Component {
     render() {
@@ -10,14 +12,14 @@ export default class NewNav extends Component {
 
                 <div className="tpmnu hidden lg:flex justify-between text-sm font-[400] font-Poppins bg-slate-100">
                     <ul className="ml-10">
-                        <p className="brand p-[.5rem]">Track Order</p>
+                        <p className="brand p-[.5rem] flex "> <PiShippingContainerFill size={21} className='mr-2' /> Track Order</p>
 
                     </ul>
 
                     <ul className="flex space-x-5 mr-16">
-                        <p className="p-[.5rem] text-violet-900">Store Locator</p>
-                        <p className="p-[.5rem]">Sample Kit</p>
-                        <p className="h-full bg-orange-600 p-[.5rem] text-white">Business Solutions</p>
+                        <a className="p-[.5rem] text-violet-900 flex" href=''><FaLocationDot size={18} className='mr-2' /> Store Locator</a>
+                        <a href='' className="p-[.5rem]">Sample Kit</a>
+                        <a href='' className="h-full bg-orange-600 p-[.5rem] text-white">Business Solutions</a>
 
                     </ul>
 
