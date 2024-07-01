@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { IoMdSearch } from 'react-icons/io'
+import { IoMdSearch, } from 'react-icons/io'
 import { FaLocationDot, FaCartShopping } from "react-icons/fa6";
 import { PiShippingContainerFill } from "react-icons/pi";
 import { RiUser5Fill } from "react-icons/ri";
 import { PiSealQuestionFill } from "react-icons/pi";
+import { IoMenuOutline } from "react-icons/io5";
 
 export default class NewNav extends Component {
     render() {
@@ -27,10 +28,10 @@ export default class NewNav extends Component {
 
                 </div>
 
-                {/* lower menu */}
+                {/* pc lower menu */}
 
 
-                <div className="lowermnu sticky top-0  flex px-2 py-4 justify-between bg-white shadow-lg">
+                <div className="hidden lowermnu sticky top-0  lg:flex px-2 py-4 justify-between bg-white shadow-lg">
 
                     <div className="flex">
                         <a href="/">
@@ -57,6 +58,32 @@ export default class NewNav extends Component {
 
 
                 </div>
+
+                {/* Mobile menu */}
+
+                <div className="mobmenu flex justify-between items-center p-2">
+                    <div className="row flex flex-wrap">
+                        <IoMenuOutline size={24} className='' />
+                    </div>
+                    <a href="/">
+                        <span>
+                            <img src="/images/logo2.png" className='h-9' alt="" />
+                        </span>
+
+                    </a>
+                    <div className="row flex flex-wrap">
+                        <IoMdSearch className="" size={24} />
+                        <a href='' className=""><FaCartShopping size={24} className=' ml-2 mr-2' /></a>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
 
             </>
         )
