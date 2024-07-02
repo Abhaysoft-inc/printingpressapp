@@ -1,6 +1,11 @@
 const express = require("express");
 const mongoose = require('mongoose');
 
+const bodyParser = require("body-parser")
+const cors = require('cors')
+
+
+
 const authRoutes = require('./routes/auth/authRoutes');
 const enqrouter = require("./routes/enquiry/enqRoute");
 
@@ -18,8 +23,10 @@ database.once('connected', () => {
 
 const app = express();
 app.use(express.json());
-app.use('/api/auth', authRoutes);
-app.use('/api/enquiry', enqrouter);
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/auth', authRoutes);
+app.use('/enquiry', enqrouter);
 
 app.listen(5050, () => {
     console.log('Hi');

@@ -10,6 +10,7 @@ router.post('/signup', async (req, res) => {
         phoneNumber: req.body.phoneNumber,
         email: req.body.email,
         address: req.body.address,
+        password: req.body.password
     })
     try {
         const userDataToSave = await userdata.save();
@@ -57,6 +58,7 @@ router.get('/user/:id', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
+
 
 
 
