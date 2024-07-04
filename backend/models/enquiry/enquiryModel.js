@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const enquiryModel = mongoose.Schema({
 
     fullName: {
-        required: true,
+
         type: String,
     },
     phoneNumber: {
@@ -11,12 +11,12 @@ const enquiryModel = mongoose.Schema({
         type: Number,
     },
     email: {
-        required: true,
+
         type: String,
     },
     message: {
         type: String,
-        required: false
+
     }
 
 });

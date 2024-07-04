@@ -107,12 +107,12 @@ function NewNav() {
                         }`}
                 >
                     <div className="p-4">
-                        <h2 className="text-xl font-semibold">Drawer Menu</h2>
+                        <h2 className="text-xl font-semibold">Karvi Printing</h2>
                         <ul className="mt-4">
-                            <li className="py-2 border-b border-gray-200">Item 1</li>
-                            <li className="py-2 border-b border-gray-200">Item 2</li>
-                            <li className="py-2 border-b border-gray-200">Item 3</li>
-                            <li className="py-2 border-b border-gray-200">Item 4</li>
+                            <li className="py-2 border-b border-gray-200"><Link to={'/'}>Home</Link></li>
+                            <li className="py-2 border-b border-gray-200"><Link to={'/services'}>Services</Link></li>
+                            <li className="py-2 border-b border-gray-200"><Link to={'/login'}>Login</Link></li>
+                            <li className="py-2 border-b border-gray-200"><Link to={'/contact'}>Contact</Link></li>
                         </ul>
                     </div>
                 </div>

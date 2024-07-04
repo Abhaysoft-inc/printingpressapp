@@ -1,9 +1,10 @@
 
 import React from 'react'
-import Navbar from '../components/Navbar'
+
 import NewNav from '../components/NewNav'
 import { Link } from 'react-router-dom'
 import ServicesCard from '../components/ServicesCard'
+import EnquiryPopup from '../components/EnquiryPopup'
 
 export default function HomePage() {
     return (
@@ -35,6 +36,8 @@ export default function HomePage() {
                     </p>
                 </div>
             </div>
+
+            <EnquiryPopup />
 
 
 
