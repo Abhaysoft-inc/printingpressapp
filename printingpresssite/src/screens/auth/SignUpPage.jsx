@@ -23,7 +23,7 @@ const SignUpPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5050/auth/signup', {
+            const response = await fetch('https://printingpressapp-production.up.railway.app/auth/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

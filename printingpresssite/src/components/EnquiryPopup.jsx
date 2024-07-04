@@ -1,6 +1,7 @@
 // src/components/EnquiryPopup.js
 
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const EnquiryPopup = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -54,6 +55,20 @@ const EnquiryPopup = () => {
         if (validateForm()) {
             // Handle form submission
             console.log('Form submitted', { name, phone });
+            //getting data
+            const fullName = e.target.fullName.value;
+            const phoneNumber = e.target.phoneNumber.value;
+            const message = e.target.message.value;
+
+            axios.post("https://printingpressapp-production.up.railway.app/enquiry/send", { fullName, phoneNumber, message }).then(Response => {
+                console.log(Response);
+            }).catch(error => {
+                console.log(error);
+            });
+
+
+
+
             togglePopup();
         }
     };
@@ -75,7 +90,7 @@ const EnquiryPopup = () => {
                                 <label htmlFor="name" className="block text-gray-700">
                                     Full Name
                                 </label>
-                                <input
+                                <input name='fullName'
                                     type="text"
                                     id="name"
                                     className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -89,7 +104,7 @@ const EnquiryPopup = () => {
                                 <label htmlFor="phone" className="block text-gray-700">
                                     Phone No.
                                 </label>
-                                <input
+                                <input name='phoneNumber'
                                     type="text"
                                     id="phone"
                                     className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -103,7 +118,7 @@ const EnquiryPopup = () => {
                                 <label htmlFor="message" className="block text-gray-700">
                                     Message
                                 </label>
-                                <textarea
+                                <textarea name='message'
                                     id="message"
                                     className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     placeholder="Enter your message"
