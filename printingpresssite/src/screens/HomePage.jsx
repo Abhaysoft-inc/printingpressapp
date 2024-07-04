@@ -28,7 +28,7 @@ export default function HomePage() {
             <h2 className="about text-center text-2xl font-Poppins font-semibold mt-24">About us</h2>
 
             <div className="about-section mx-6 mt-10 mb-5 bg-slate-100 shadow-lg rounded-lg p-6 flex flex-col lg:flex-row items-center lg:items-start">
-                <img src="/images/banner.png" className='rounded-lg w-full lg:w-1/2' alt="" />
+                <img src="/webp/banner.webp" className='rounded-lg w-full lg:w-1/2' alt="" />
                 <div className="dec mt-4 lg:mt-0 lg:ml-6 p-3 lg:w-1/2">
                     <p className="text-2xl font-semibold font-Poppins">Karvi Printing</p>
                     <p className="mt-3">
