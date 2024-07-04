@@ -11,7 +11,7 @@ export default function HomePage() {
         <>
 
             <NewNav />
-            <img src="/images/banner.png" className='w-screen' alt="" loading='lazy' />
+            <img src="/webp/banner.webp" className='w-screen' alt="" loading='lazy' />
 
             <h1 className="text-center font-Poppins mt-6 text-2xl font-semibold"> Our Services</h1>
 
