@@ -19,7 +19,7 @@ function NewNav() {
 
             {/* top menu */}
 
-            <div className="tpmnu hidden lg:flex md:flex justify-between text-sm font-[400] font-Poppins bg-slate-100">
+            <div className="tpmnu hidden lg:flex md:flex justify-between text-sm font-[400] font-Poppins bg-[#f8f9fa]">
                 <ul className="ml-10">
                     <p className="brand p-[.5rem] flex "> <PiShippingContainerFill size={21} className='mr-2' /> Track Order</p>
 
@@ -37,7 +37,7 @@ function NewNav() {
             {/* pc lower menu */}
 
 
-            <div className="hidden lowermnu sticky top-0  lg:flex md:flex px-2 py-4 justify-between bg-white shadow-lg">
+            <div className="hidden lowermnu sticky top-0  lg:flex md:flex px-2 py-4 justify-between bg-white shadow-none">
 
                 <div className="flex">
                     <Link to={"/"}>
@@ -65,6 +65,26 @@ function NewNav() {
 
 
             </div>
+
+
+            {/* category menu */}
+
+            <div className="hidden cat-menu bg-[#f8f9fa] lg:flex space-x-6 font-Poppins text-gray-700 px-14 py-2.5 text-[15px] font-[500]">
+
+                <a href="">All Products</a>
+                <a href="">Business Card</a>
+                <a href="">Marketing Material</a>
+                <a href="">Signs & Banners</a>
+                <a href="">Invitations & Stationary</a>
+                <a href="">Stickers & Labels</a>
+                <a href="">Letter Board</a>
+                <a href="">Digital Print</a>
+                <a href="">Offset Print</a>
+
+
+            </div>
+
+
 
             {/* Mobile menu */}
 
