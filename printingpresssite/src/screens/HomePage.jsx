@@ -7,6 +7,7 @@ import ServicesCard from '../components/ServicesCard'
 import EnquiryPopup from '../components/EnquiryPopup'
 import HelpSection from '../components/HelpSection'
 import SliderComp from '../components/SliderComp'
+import Footer from '../components/Footer'
 
 export default function HomePage() {
     return (
@@ -44,7 +45,8 @@ export default function HomePage() {
 
 
 
-            <EnquiryPopup />
+            {/* <EnquiryPopup /> */}
+            <Footer />
 
 
 

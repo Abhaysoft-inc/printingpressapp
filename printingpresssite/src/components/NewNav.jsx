@@ -69,7 +69,7 @@ function NewNav() {
 
             {/* category menu */}
 
-            <div className="hidden cat-menu bg-[#f8f9fa] lg:flex space-x-4 font-Poppins text-[#666666] px-14 py-2.5 text-[15px] ">
+            <div className="hidden cat-menu bg-[#f8f9fa] lg:flex md:flex space-x-4 font-Poppins text-[#666666] px-14 py-2.5 text-[15px] ">
 
                 <a href="" className='text-black'>All Products</a>
                 <a href="">Business Card</a>
