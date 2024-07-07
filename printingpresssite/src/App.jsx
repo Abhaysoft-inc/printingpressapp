@@ -5,6 +5,7 @@ import { Routes, BrowserRouter, Route } from 'react-router-dom';
 import './App.css'
 import NewNav from './components/NewNav.jsx';
 import LoadingScreen from './components/LoadingScreen.jsx';
+import HelpScreen from './screens/HelpScreen.jsx';
 // const MarkdownPreview = lazy(() => import('./MarkdownPreview.js'));
 const HomePage = lazy(() => import('./screens/HomePage.jsx'));
 const LoginPage = lazy(() => import('./screens/auth/LoginPage.jsx'));
@@ -25,6 +26,7 @@ function App() {
           <Route path='/signup' element={<Suspense fallback={<NewNav />}><SignUpPage /></Suspense>} />
           <Route path='/login' element={<Suspense fallback={<LoadingScreen />}><LoginPage /></Suspense>} />
           <Route path='/load' element={<LoadingScreen />} />
+          <Route path='/help' element={<Suspense fallback={<LoadingScreen />}> <HelpScreen /></Suspense>} />
 
         </Routes>
       </BrowserRouter>

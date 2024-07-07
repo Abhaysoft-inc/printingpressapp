@@ -56,7 +56,7 @@ function NewNav() {
                 </div>
 
                 <div className="flex p-[.5rem] space-x-7 mr-16 text-slate-600">
-                    <Link className="flex" to={''}><PiSealQuestionFill size={24} className='mr-2' /> Help Center</Link>
+                    <Link className="flex" to={'/help'}><PiSealQuestionFill size={24} className='mr-2' /> Help Center</Link>
                     <Link to={'/login'} className="flex"><RiUser5Fill size={24} className='mr-2' /> Login / Signup</Link>
 
                     <Link to='' className=""><FaCartShopping size={24} className='mt-1' /></Link>
