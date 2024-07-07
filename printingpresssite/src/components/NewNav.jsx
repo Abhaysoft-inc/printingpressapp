@@ -37,7 +37,7 @@ function NewNav() {
             {/* pc lower menu */}
 
 
-            <div className="hidden lowermnu sticky top-0  lg:flex md:flex px-2 py-4 justify-between bg-white shadow-none">
+            <div className="hidden lowermnu sticky top-0  lg:flex md:flex px-2 py-4 justify-between bg-white shadow-none z-10">
 
                 <div className="flex">
                     <Link to={"/"}>

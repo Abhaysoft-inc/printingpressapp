@@ -74,7 +74,7 @@ const EnquiryPopup = () => {
     return (
         <>
             {isOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-20">
                     <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md relative">
                         <button
                             onClick={togglePopup}

@@ -6,13 +6,15 @@ import { Link } from 'react-router-dom'
 import ServicesCard from '../components/ServicesCard'
 import EnquiryPopup from '../components/EnquiryPopup'
 import HelpSection from '../components/HelpSection'
+import SliderComp from '../components/SliderComp'
 
 export default function HomePage() {
     return (
         <>
 
             <NewNav />
-            <img src="/webp/banner.webp" className='w-screen' alt="" loading='lazy' />
+            {/* <img src="/webp/banner.webp" className='w-screen' alt="" loading='lazy' /> */}
+            <SliderComp />
 
             <h1 className="text-center font-Poppins mt-6 text-2xl font-semibold"> Our Services</h1>
 
@@ -40,9 +42,11 @@ export default function HomePage() {
 
             {/* Help Section */}
 
-            <HelpSection />
+
 
             <EnquiryPopup />
+
+
 
 
 
