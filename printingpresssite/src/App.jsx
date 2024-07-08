@@ -6,6 +6,7 @@ import './App.css'
 import NewNav from './components/NewNav.jsx';
 import LoadingScreen from './components/LoadingScreen.jsx';
 import HelpScreen from './screens/HelpScreen.jsx';
+import StoreLocator from './screens/StoreLocator.jsx';
 // const MarkdownPreview = lazy(() => import('./MarkdownPreview.js'));
 const HomePage = lazy(() => import('./screens/HomePage.jsx'));
 const LoginPage = lazy(() => import('./screens/auth/LoginPage.jsx'));
@@ -27,6 +28,7 @@ function App() {
           <Route path='/login' element={<Suspense fallback={<LoadingScreen />}><LoginPage /></Suspense>} />
           <Route path='/load' element={<LoadingScreen />} />
           <Route path='/help' element={<Suspense fallback={<LoadingScreen />}> <HelpScreen /></Suspense>} />
+          <Route path='/locate-store' element={<Suspense fallback={<LoadingScreen />}><StoreLocator /></Suspense>} />
 
         </Routes>
       </BrowserRouter>

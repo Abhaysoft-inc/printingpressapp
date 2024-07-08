@@ -6,6 +6,7 @@ import { RiUser5Fill } from "react-icons/ri";
 import { PiSealQuestionFill } from "react-icons/pi";
 import { IoMenuOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { FaStore } from "react-icons/fa";
 
 
 function NewNav() {
@@ -21,12 +22,12 @@ function NewNav() {
 
             <div className="tpmnu hidden lg:flex md:flex justify-between text-sm font-[400] font-Poppins bg-[#f8f9fa]">
                 <ul className="ml-10">
-                    <p className="brand p-[.5rem] flex "> <PiShippingContainerFill size={21} className='mr-2' /> Track Order</p>
+                    <p className="brand p-[.5rem] flex "> <FaStore size={21} className='mr-2' />Franchise</p>
 
                 </ul>
 
                 <ul className="flex space-x-5 mr-16">
-                    <Link className="p-[.5rem] text-violet-900 flex" to={''}><FaLocationDot size={18} className='mr-2' /> Store Locator</Link>
+                    <Link className="p-[.5rem] text-violet-900 flex" to={'/locate-store'}><FaLocationDot size={18} className='mr-2' /> Store Locator</Link>
                     <Link to={''} className="p-[.5rem]">Sample Kit</Link>
                     <Link tp={''} className="h-full bg-orange-600 p-[.5rem] text-white">Business Solutions</Link>
 
@@ -49,13 +50,13 @@ function NewNav() {
                         <IoMdSearch className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400" />
                         <input
                             type="text"
-                            className="border my-1.5 rounded-md py-2 pl-10 pr-3 border-slate-400 w-64"
+                            className="border my-1.5 rounded-md py-2 pl-10 pr-3 border-slate-400 w-[500px]"
                             placeholder="Search"
                         />
                     </form>
                 </div>
 
-                <div className="flex p-[.5rem] space-x-7 mr-16 text-slate-600">
+                <div className="flex p-[.5rem] space-x-7 mr-16 text-slate-600 mt-1">
                     <Link className="flex" to={'/help'}><PiSealQuestionFill size={24} className='mr-2' /> Help Center</Link>
                     <Link to={'/login'} className="flex"><RiUser5Fill size={24} className='mr-2' /> Login / Signup</Link>
 
