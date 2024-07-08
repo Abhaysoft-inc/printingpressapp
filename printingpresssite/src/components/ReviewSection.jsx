@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { GoogleMap, useLoadScript } from '@react-google-maps/api';
 
-const apiKey = 'AIzaSyDmXMl2qGDoiVWu2IyQAVuepV7sqAIiHXg'; // Replace with your Google API key
+const apiKey = 'f**k u'; // Replace with your Google API key
 const placeId = 'ChIJfZpxTL1bkTkRtCGp13DTl3M'; // Replace with your Google Maps Place ID
 
 const ReviewsSection = () => {
     const [reviews, setReviews] = useState([]);
 
-    const { isLoaded } = useLoadScript({
+    const { isLoaded } = useLoadScript ({
         googleMapsApiKey: apiKey,
         libraries: ['places'],
     });
