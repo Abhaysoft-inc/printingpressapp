@@ -35,7 +35,7 @@ export default function HomePage() {
 
 
             {/* about us */}
-            <h2 className="about text-center text-2xl font-Poppins font-semibold mt-26">About us</h2>
+            <h2 className="about text-center text-2xl font-Poppins font-semibold mt-20">About us</h2>
 
             <div className="about-section mx-6 mt-10 mb-5 bg-slate-100 shadow-lg rounded-lg p-6 flex flex-col lg:flex-row items-center lg:items-start">
                 <img src="/webp/banner.webp" className='rounded-lg w-full lg:w-1/2' alt="" />
