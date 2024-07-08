@@ -37,7 +37,7 @@ function NewNav() {
             {/* pc lower menu */}
 
 
-            <div className="hidden lowermnu sticky top-0  lg:flex md:flex px-2 py-4 justify-between bg-white shadow-none z-10">
+            <div className="hidden lowermnu  lg:flex md:flex px-2 py-4 justify-between bg-white shadow-none z-10">
 
                 <div className="flex">
                     <Link to={"/"}>
@@ -69,7 +69,7 @@ function NewNav() {
 
             {/* category menu */}
 
-            <div className="hidden cat-menu bg-[#f8f9fa] lg:flex md:flex space-x-4 font-Poppins text-[#666666] px-14 py-2.5 text-[15px] ">
+            <div className="hidden cat-menu bg-[#f8f9fa] lg:flex md:flex space-x-4 font-Poppins text-[#666666] px-6 py-2.5 text-[14px] justify-center ">
 
                 <a href="" className='text-black'>All Products</a>
                 <a href="">Business Card</a>

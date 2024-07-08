@@ -21,8 +21,8 @@ export default function SliderComp() {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide he><img src="/webp/g3.webp" alt="" /></SwiperSlide>
                     <SwiperSlide><img src="/webp/g1.webp" alt="" /></SwiperSlide>
