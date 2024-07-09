@@ -59,12 +59,15 @@ const EnquiryPopup = () => {
             const fullName = e.target.fullName.value;
             const phoneNumber = e.target.phoneNumber.value;
             const message = e.target.message.value;
+            const access_key = e.target.access_key.value;
 
-            axios.post("https://printingpressapp-production.up.railway.app/enquiry/send", { fullName, phoneNumber, message }).then(Response => {
+            axios.post("https://api.web3forms.com/submit", { fullName, phoneNumber, message, access_key }).then(Response => {
                 console.log(Response);
             }).catch(error => {
                 console.log(error);
             });
+
+
 
 
             togglePopup();
@@ -74,7 +77,7 @@ const EnquiryPopup = () => {
     return (
         <>
             {isOpen && (
-                <div className="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-20">
+                <div className=" fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-20">
                     <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md relative">
                         <button
                             onClick={togglePopup}
@@ -84,6 +87,7 @@ const EnquiryPopup = () => {
                         </button>
                         <h2 className="text-2xl font-bold mb-6 text-center">Request Pricing!</h2>
                         <form onSubmit={handleSubmit}>
+                            <input type="hidden" name="access_key" value="131873c4-ec09-4cce-9db3-6bd75bafa289" />
                             <div className="mb-4">
                                 <label htmlFor="name" className="block text-gray-700">
                                     Full Name
