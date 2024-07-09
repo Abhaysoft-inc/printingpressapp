@@ -22,7 +22,8 @@ function NewNav() {
 
             <div className="tpmnu hidden lg:flex md:flex justify-between text-sm font-[400] font-Poppins bg-[#f8f9fa]">
                 <ul className="ml-10">
-                    <p className="brand p-[.5rem] flex "> <FaStore size={21} className='mr-2' />Franchise</p>
+
+                    <li className="brand p-[.5rem] flex "> <FaStore size={21} className='mr-2' />Franchise</li>
 
                 </ul>
 
@@ -42,7 +43,7 @@ function NewNav() {
 
                 <div className="flex">
                     <Link to={"/"}>
-                        <img src="/images/logo2.png" alt="" className="w-14 h-12 ml-6" />
+                        <img src="/images/logo2.png" alt="karvi printing logo" className="w-14 h-12 ml-6" />
                     </Link>
                     <Link className="my-2 ml-3 text-lg font-[700] font-Poppins" to={'/'}>Karvi Printing</Link>
                     {/* Search box */}
@@ -96,7 +97,7 @@ function NewNav() {
                 </div>
                 <Link to={"/"}>
                     <span className='flex'>
-                        <img src="/images/logo2.png" className='h-9' alt="" />
+                        <img src="/images/logo2.png" className='h-9' alt="karvi printing logo" />
                         <p className=" font-Poppins font-bold ml-2 mt-1.5">Karvi Printing</p>
                     </span>
 
