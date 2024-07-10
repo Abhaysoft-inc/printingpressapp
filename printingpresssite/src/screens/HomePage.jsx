@@ -35,7 +35,7 @@ export default function HomePage() {
     return (
         <>
             <Helmet>
-                <title>Karvi Printing - Gorakhpur's Fastest Printing Service: Brochures, Flyers & More</title>
+                <title>Best Printing Press in Gorakhpur - Business Cards, Banners and Printing </title>
                 <meta name="description" content="High-quality, affordable printing for businesses & individuals. Brochures, flyers, business cards & more. Fast turnaround, free quotes. Call now!" />
                 <meta name='keywords' content='printing near me, printing services in Gorakhpur, Gorakhpur printing company, Gorakhpur print shop, near me printing press Gorakhpur, best printing press in Gorakhpur, top printers Gorakhpur, high-quality printing services in Gorakhpur for businesses, affordable printing for individuals in Gorakhpur, custom printing solutions near me, large format printing for events in Gorakhpur, eco-friendly printing company in Gorakhpur' />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
